@@ -1,0 +1,145 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Payment Form Styles */
+.payment-form {
+    width: 50%;
+    margin: 30px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.payment-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.submit-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .payment-form {
+        width: 80%;
+    }
+
+    header .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        display: block;
+        text-align: left;
+    }
+
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+
+    header nav ul li a {
+        font-size: 14px;
+    }
+
+    .form-group input {
+        font-size: 14px;
+    }
+
+    .submit-btn {
+        padding: 12px 20px;
+    }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+    .payment-form {
+        width: 90%;
+    }
+
+    header .header-container {
+        padding: 10px;
+    }
+
+    header nav ul li a {
+        font-size: 12px;
+    }
+
+    .form-group input {
+        font-size: 12px;
+    }
+
+    .submit-btn {
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+}
